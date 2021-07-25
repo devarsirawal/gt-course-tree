@@ -5,7 +5,7 @@
 <br>
 
 <div align="center">
-    <img src="public/screenshot.png" alt="home"/>
+    <img src="https://github.com/devarsi-rawal/gt-course-tree/blob/master/public/screenshot.PNG" alt="home"/>
 </div>
 
 ## 🚀 Running Locally
