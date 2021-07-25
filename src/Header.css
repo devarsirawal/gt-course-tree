@@ -1,0 +1,11 @@
+header {
+  height: 10vh;
+  min-height: 2em;
+  width: 100vw;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  border-bottom: .5px solid #888888;
+}

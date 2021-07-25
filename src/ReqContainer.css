@@ -1,0 +1,25 @@
+.content {
+  height: 85vh;
+  padding: .5em .5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.visualization {
+  width: 100%;
+  margin: auto 0;
+  background-color: #3f3f3f;
+  overflow: auto;
+  text-align: center;
+}
+
+.react-select-container {
+  width: 50%;
+  margin: 1em 0;
+  cursor: text;
+}
+
+.react-select__menu-list {
+  color: black;
+}

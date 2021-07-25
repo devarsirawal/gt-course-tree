@@ -1,0 +1,138 @@
+$connector-size: 0.75rem;
+$btn-border-radius: 0.25rem;
+
+.container {
+  width: 40em;
+  display: flex;
+  align-items: center;
+  // Leave some space for the tooltip
+  padding: 3rem 0;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.tree,
+.prereq-tree {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0.125rem 0;
+  text-align: center;
+}
+
+.node {
+  position: relative;
+  display: flex;
+  flex: 0 1 4rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.125rem 0.25rem;
+  margin: 0 0 1px $connector-size;
+  border-radius: $btn-border-radius;
+  white-space: nowrap;
+  
+
+
+  &::before {
+    top: 50%;
+    left: -$connector-size;
+    width: $connector-size;
+    height: 1px;
+  }
+}
+
+.link {
+  display: block;
+  width: 100%;
+  color: currentColor;
+
+  &:hover {
+    color: currentColor;
+  }
+}
+
+.node::before,
+.conditional::after,
+.branch::before,
+.branch::after {
+  content: '';
+  position: absolute;
+  background: #b8b8b8;
+}
+
+.conditional {
+  flex: 0 0 auto;
+  margin-right: $connector-size;
+  border: 0;
+
+  &::after {
+    top: 50%;
+    right: -$connector-size;
+    width: $connector-size;
+    height: 1px;
+  }
+}
+
+.branch {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before,
+  &::after {
+    left: 0;
+    width: 1px;
+    height: 50%;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  &:first-child::before,
+  &:last-child::after {
+    display: none;
+  }
+}
+
+.prereq-branch {
+  &::before,
+  &::after {
+    right: 0;
+    left: auto;
+  }
+}
+
+.postreq-node {
+  margin: 0 $connector-size 1px 0;
+  border-color: #e91a1f;
+  color: #8f0e11;
+  background-color: #f2777a;
+  flex: 0 1 6em;
+
+  &::before {
+    right: -$connector-size;
+    left: auto;
+  }
+}
+
+.course-node {
+  border-color: #e25608;
+  color: #7f3105;
+  background-color: #f99157;
+  margin-left: 0;
+
+  &:only-child::before {
+    display: none;
+  }
+}
+
+.prereq-node {
+  border-color: #5a5;
+  color: #363;
+  background-color: #9c9;
+}

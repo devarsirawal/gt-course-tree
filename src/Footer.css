@@ -1,0 +1,18 @@
+footer {
+  height: 5vh;
+  min-height: 1em;
+  width: 100vw;
+  padding: 0 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .75em;
+  border-top: .5px solid #888888;
+}
+
+footer .icon {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  vertical-align: text-bottom;
+}
