@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/gt-course-tree/static/css/main.aa13a371.chunk.css",
-    "main.js": "/gt-course-tree/static/js/main.510d6375.chunk.js",
-    "main.js.map": "/gt-course-tree/static/js/main.510d6375.chunk.js.map",
+    "main.js": "/gt-course-tree/static/js/main.82fd31cd.chunk.js",
+    "main.js.map": "/gt-course-tree/static/js/main.82fd31cd.chunk.js.map",
     "runtime-main.js": "/gt-course-tree/static/js/runtime-main.7f92a99b.js",
     "runtime-main.js.map": "/gt-course-tree/static/js/runtime-main.7f92a99b.js.map",
     "static/js/2.044a7a54.chunk.js": "/gt-course-tree/static/js/2.044a7a54.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.7f92a99b.js",
     "static/js/2.044a7a54.chunk.js",
     "static/css/main.aa13a371.chunk.css",
-    "static/js/main.510d6375.chunk.js"
+    "static/js/main.82fd31cd.chunk.js"
   ]
 }
